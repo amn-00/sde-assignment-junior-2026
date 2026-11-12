@@ -1,11 +1,11 @@
 # AI Usage Disclosure
 
-## Tools Used
+## Tools used
 - **Claude (Anthropic, claude.ai):** used to build the solution.
 - **Claude Code (VS Code extension):** used for reviewing the code against the spec, testing,
   simplifying, and finding a performance problem.
 
-## What I Used Them For
+## What I used them for
 
 **Building the solution (claude.ai):**
 - Compared the two assignments. I chose Assignment A.
@@ -27,7 +27,7 @@
   below).
 - Re-checked the reports against generator ground truth on three new seeds.
 
-## What I Decided and Did Myself
+## What I wrote or decided myself
 - Chose Assignment A after comparing both assignments.
 - Asked for the solution to be reviewed against the spec and simplified wherever it was more
   complicated than it needed to be.
@@ -40,7 +40,7 @@
   transactions instead of switching to one commit per drop: recoverability matters more than
   the two-minute stretch target. I chose to report the real numbers honestly.
 
-## Where AI Suggestions Were Wrong or Needed Correction
+## Where the AI was wrong or unhelpful
 - **Incorrect performance claim:** the first `SUBMISSION.md` reported ~41 seconds for the large
   dataset, measured in a Linux sandbox. On my Windows laptop, drop 1 alone took 666 seconds.
   The numbers are now corrected.
@@ -58,7 +58,7 @@
   - Following the header rule literally meant `phone_` did not match `phone`. Added a final
     trim and documented the decision.
 
-## How the Final Implementation Was Verified
+## How I verified AI-generated code
 - `pytest`: all 69 tests pass on my Windows laptop (Python 3.12).
 - Ground-truth check on seeds the code had never seen (2026, 31337, 4242): 0 mismatches in
   `lead_report.csv`, `daily_overview.csv` and `batch_summary.csv`; rejected, orphan and
